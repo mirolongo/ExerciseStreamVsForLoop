@@ -53,8 +53,14 @@ public class ForLoop {
         for (Object next : recipes) {
             for (int i = 0; i < recipes.size(); i++) {
                 for (String next1 : book.get(i).getIngredients()) {
-                    if (next1 == ingredient1) { 
-                        System.out.println(book.get(i).getName());
+                    if (next1 == ingredient1) {
+                        for (int x = 0; x < recipes.size(); x++) {
+                            for (String next2 : book.get(x).getIngredients()) {
+                                if(next2 == ingredient2){
+                                    System.out.println(book.get(x).getName());
+                                }
+                            }
+                        }
                     }
                 }
             }

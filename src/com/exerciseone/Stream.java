@@ -18,4 +18,6 @@ public class Stream {
                 .collect(Collectors.toList());
         System.out.println(result);
     }
+
+
 }
