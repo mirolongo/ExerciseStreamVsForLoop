@@ -29,6 +29,7 @@ public class Stream {
         System.out.println(result);
     }
 
+    //Show all recipes in the book by stream
     public void showAllRecipeInBookStream(List<Recipe> book){
         List<Recipe> result = book.stream()
                 .collect(Collectors.toList());

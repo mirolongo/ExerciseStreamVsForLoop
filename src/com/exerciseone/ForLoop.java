@@ -68,7 +68,7 @@ public class ForLoop {
         return null;
     }
 
-    //Show in console all recipe in the book
+    //Show all recipes in the book by for loop
     public void showAllRecipeInBook(List<Recipe> book){
         List<Recipe> recipes = book;
         for (Object next : recipes) {
