@@ -26,6 +26,12 @@ public class Stream {
                 .filter(recipe -> recipe.getIngredients().equals(ingredient1))
                .filter(recipe -> recipe.getIngredients().equals(ingredient2))
                .collect(Collectors.toList());
-        System.out.println(result + "    STREAM HERE");
+        System.out.println(result);
+    }
+
+    public void showAllRecipeInBookStream(List<Recipe> book){
+        List<Recipe> result = book.stream()
+                .collect(Collectors.toList());
+        System.out.println("All Recipes in the book:" + "\n" + result);
     }
 }

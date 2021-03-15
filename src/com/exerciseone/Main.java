@@ -28,5 +28,6 @@ public class Main {
         stream.filterByFirstLetterOfRecipe(book,firstLetter);
         stream.filterByLastLetterOfRecipe(book,lastLatter);
         stream.filterByTwoIngredients(book,salt,ingredient);
+        stream.showAllRecipeInBookStream(book);
     }
 }
