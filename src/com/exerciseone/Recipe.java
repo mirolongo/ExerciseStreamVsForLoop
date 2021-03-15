@@ -27,6 +27,7 @@ public class Recipe {
     public String toString(){
         return "Name of the recipe: " + name + ", cooking time: " + cookingTime + ", Ingredients: " + ingredients;
 
+
     }
 
 }
