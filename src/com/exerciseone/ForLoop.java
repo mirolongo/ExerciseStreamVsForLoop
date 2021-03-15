@@ -88,4 +88,13 @@ public class ForLoop {
             }
         }
     }
+    public void filterNumberOfIngredients(List<Recipe> book, int numberOfIngredients){
+        List<Recipe> recipes = book;
+        for (int i = 0; i < recipes.size(); i++){
+            int x = recipes.get(i).getIngredients().size();
+            if(x < numberOfIngredients) {
+                System.out.println("Recipes with less than " + numberOfIngredients + "  ingredients  "  + "\n" + recipes.get(i) +"\n");
+            }
+        }
+    }
 }

@@ -14,6 +14,7 @@ public class Main {
         String lastLatter = "t";                            //Variable to create a filter of last letter
         String ingredient = "chocolate";                    //Variable to create a filter of two ingredients
         int time = 50;                                      //Variable to create a filter of cooking time
+        int numberOfIngredients = 5;
 
         //Instance of for loop methods
         ForLoop forLoop = new ForLoop();
@@ -24,6 +25,7 @@ public class Main {
         forLoop.ingredientsContain(book, salt, ingredient);
         forLoop.showAllRecipeInBook(book);
         forLoop.filterCookingTime(book,time);
+        forLoop.filterNumberOfIngredients(book,numberOfIngredients);
 
         //Stream methods from Stream Class
         Stream stream = new Stream();
@@ -31,5 +33,6 @@ public class Main {
         stream.filterByLastLetterOfRecipe(book,lastLatter);
         stream.filterByTwoIngredients(book,salt,ingredient);
         stream.showAllRecipeInBookStream(book);
+
     }
 }

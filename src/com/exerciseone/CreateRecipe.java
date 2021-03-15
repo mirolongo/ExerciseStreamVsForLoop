@@ -21,6 +21,8 @@ public class CreateRecipe {
         pizzaIngredients.add("cheese");
         pizzaIngredients.add("salt");
         pizzaIngredients.add("oliver");
+        pizzaIngredients.add("tomato");
+        pizzaIngredients.add("Ham");
         String pizzaName = "Marguerite";
         int cookingTimePizza = 45;
         Recipe pizza = new Recipe(pizzaIngredients, cookingTimePizza, pizzaName);
@@ -30,7 +32,10 @@ public class CreateRecipe {
         pajIngredients.add("four");
         pajIngredients.add("salt");
         pajIngredients.add("Cow meat");
-        String pajName = "Meat";
+        pajIngredients.add("tomato");
+        pajIngredients.add("onion");
+        pajIngredients.add("garlic");
+        String pajName = "Meat paj";
         int cookingTimePaj = 55;
         Recipe paj = new Recipe(pajIngredients, cookingTimePaj, pajName);
 
