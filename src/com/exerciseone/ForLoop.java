@@ -22,6 +22,7 @@ public class ForLoop {
         return null;
     }
 
+    //Filter the name of recipe by first letter
     public String filterNameOfRecipeByTheFirstLetter(List<Recipe> book, String letter){
         List<Recipe> recipes = book;
         for (Object next : recipes) {
@@ -33,6 +34,7 @@ public class ForLoop {
             }
             return null;
     }
+    //Filter the name of recipe by last letter
     public String filterNameOfRecipeByTheLastLetter(List<Recipe> book, String letter){
         List<Recipe> recipes = book;
         for (Object next : recipes) {
@@ -45,6 +47,7 @@ public class ForLoop {
         return null;
     }
 
+    //Filter by two ingredients
     public String ingredientsContain(List<Recipe> book, String ingredient1, String ingredient2){
         List<Recipe> recipes = book;
         for (Object next : recipes) {
@@ -54,12 +57,8 @@ public class ForLoop {
                         System.out.println(book.get(i).getName());
                     }
                 }
-
-
             }
         }
-
-
         return null;
     }
 }

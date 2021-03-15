@@ -6,6 +6,7 @@ public class CreateRecipe {
 
     public void createBook(List<Recipe> books) {
         List<Recipe> book = books;
+
         ///Object 1 create CAKE
         ArrayList<String> cakeIngredients = new ArrayList<>();
         cakeIngredients.add("sugar");
@@ -13,7 +14,6 @@ public class CreateRecipe {
         cakeIngredients.add("chocolate");
         String cakeName = "Chocolate Cake";
         int cookingTimeCake = 25;
-
         Recipe cake = new Recipe(cakeIngredients, cookingTimeCake, cakeName);
 
         //Object 2 create PIZZA
@@ -23,13 +23,9 @@ public class CreateRecipe {
         pizzaIngredients.add("oliver");
         String pizzaName = "Marguerite";
         int cookingTimePizza = 45;
-
         Recipe pizza = new Recipe(pizzaIngredients, cookingTimePizza, pizzaName);
 
         //Create book with 2 objects (cake and pizza);
-
-
-
         book.add(cake);
         book.add(pizza);
     }
