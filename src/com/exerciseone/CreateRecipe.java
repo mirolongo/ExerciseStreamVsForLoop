@@ -25,8 +25,18 @@ public class CreateRecipe {
         int cookingTimePizza = 45;
         Recipe pizza = new Recipe(pizzaIngredients, cookingTimePizza, pizzaName);
 
-        //Create book with 2 objects (cake and pizza);
+        //Object 3 create Paj
+        ArrayList<String> pajIngredients = new ArrayList<>();
+        pajIngredients.add("four");
+        pajIngredients.add("salt");
+        pajIngredients.add("Cow meat");
+        String pajName = "Meat";
+        int cookingTimePaj = 55;
+        Recipe paj = new Recipe(pajIngredients, cookingTimePaj, pajName);
+
+        //Create book with 3 objects (cake, pizza and paj);
         book.add(cake);
         book.add(pizza);
+        book.add(paj);
     }
 }
