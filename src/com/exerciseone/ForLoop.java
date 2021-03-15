@@ -74,6 +74,18 @@ public class ForLoop {
         for (Object next : recipes) {
             System.out.println(next);
         }
+    }
 
+    //filter of cooking time
+    public void filterCookingTime(List<Recipe> book, int time){
+        List<Recipe> recipes = book;
+        for (int i = 0; i < recipes.size(); i++) {
+            for (Recipe recipe:recipes) {
+                if(recipe.cookingTime <= time){
+                    System.out.println("Recipe: " + recipe.getName() + " takes less than " + time + " minutes");
+                }
+
+            }
+        }
     }
 }

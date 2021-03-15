@@ -13,6 +13,7 @@ public class Main {
         String firstLetter = "C";                           //Variable to create a filter of first letter
         String lastLatter = "t";                            //Variable to create a filter of last letter
         String ingredient = "chocolate";                    //Variable to create a filter of two ingredients
+        int time = 50;                                      //Variable to create a filter of cooking time
 
         //Instance of for loop methods
         ForLoop forLoop = new ForLoop();
@@ -22,6 +23,7 @@ public class Main {
         forLoop.filterNameOfRecipeByTheLastLetter(book,lastLatter);
         forLoop.ingredientsContain(book, salt, ingredient);
         forLoop.showAllRecipeInBook(book);
+        forLoop.filterCookingTime(book,time);
 
         //Stream methods from Stream Class
         Stream stream = new Stream();
