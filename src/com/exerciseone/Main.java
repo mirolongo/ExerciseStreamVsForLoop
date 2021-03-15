@@ -20,6 +20,7 @@ public class Main {
 
         //Stream methods from Stream Class
         Stream stream = new Stream();
-        stream.filterByLetterOfRecipe(book,firstLetter);
+        stream.filterByFirstLetterOfRecipe(book,firstLetter);
+        stream.filterByLastLetterOfRecipe(book,lastLatter);
     }
 }
