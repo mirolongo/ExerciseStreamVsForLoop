@@ -67,4 +67,13 @@ public class ForLoop {
         }
         return null;
     }
+
+    //Show in console all recipe in the book
+    public void showAllRecipeInBook(List<Recipe> book){
+        List<Recipe> recipes = book;
+        for (Object next : recipes) {
+            System.out.println(next);
+        }
+
+    }
 }

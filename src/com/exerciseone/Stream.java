@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,8 +17,15 @@ public class Stream {
         List<Recipe> result = book.stream()
                 .filter(recipe -> recipe.getName().endsWith(letter))
                 .collect(Collectors.toList());
+        result.add(book.get(0));
         System.out.println(result);
     }
-
-
+    //Filter by two ingredients
+    public void filterByTwoIngredients(List<Recipe> book, String ingredient1, String ingredient2){
+        List<Recipe> result = book.stream()
+                .filter(recipe -> recipe.getIngredients().equals(ingredient1))
+               .filter(recipe -> recipe.getIngredients().equals(ingredient2))
+               .collect(Collectors.toList());
+        System.out.println(result + "    STREAM HERE");
+    }
 }
