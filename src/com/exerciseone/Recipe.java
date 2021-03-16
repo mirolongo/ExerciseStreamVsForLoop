@@ -22,6 +22,7 @@ public class Recipe {
     public String getName() {
         return name;
     }
+
     @Override
     public String toString(){
         return "Name of the recipe: " + name + ", cooking time: " + cookingTime + ", Ingredients: " + ingredients;

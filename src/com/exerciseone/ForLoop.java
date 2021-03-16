@@ -84,7 +84,6 @@ public class ForLoop {
                 if(recipe.cookingTime <= time){
                     System.out.println("Recipe: " + recipe.getName() + " takes less than " + time + " minutes");
                 }
-
             }
         }
     }
